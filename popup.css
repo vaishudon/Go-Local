@@ -18,8 +18,10 @@ p {
 
 .stars {
     display: flex;
+    align-items: center;
 }
 
 img {
     width: 10px;
+    height:10px
 }

@@ -14,20 +14,24 @@ document.addEventListener('DOMContentLoaded', function () {
          //  console.log(locationName);
 
         })
+    });
 
-        chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-            console.log(tabs[0].url);
-            console.log(tabs[0].title);
+    chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+        console.log(tabs[0].url);
+        console.log(tabs[0].title);
 
-            fetch('http://127.0.0.1:5000/retrieve?product=' + 'watch')
+        let start = tabs[0].url.indexOf("s?k=") + 4;
+        let end = tabs[0].url.indexOf("&");
+        let product_name = tabs[0].url.substring(start, end);
+
+        fetch('http://127.0.0.1:5000/retrieve?product=' + product_name)
             .then((response) => response.json())
             .then(displayProducts)
             .catch(console.err);
-            let start = tabs[0].url.indexOf("s?k=") + 4;
-            let end = tabs[0].url.indexOf("&");
-            console.log(tabs[0].url.substring(start, end));
-          });
-    });
+
+        console.log(product_name);
+      });
+
 }, false);
 
 function displayProducts(response) {
@@ -50,17 +54,29 @@ function displayProducts(response) {
             price.textContent = "Price: $" + response[product][0];
             newProductSection.appendChild(price);
 
-            let rating = document.createElement("p");
-            rating.textContent = "Rating: " + response[product][1];
-            newProductSection.appendChild(rating);
+
 
             let rating_display = document.createElement("section");
             rating_display.classList = "stars";
+            let rating = document.createElement("p");
+            rating.textContent = "Rating: "
+            rating_display.appendChild(rating);
+
             for (let i = 0; i < parseInt(response[product][1]); i++) {
                 let star = document.createElement("img");
                 star.src = "img/star.png";
                 rating_display.appendChild(star);
             }
+            if ((response[product][1]).includes(".5")) {
+                let half_star = document.createElement("img");
+                half_star.src = "img/half-star.png";
+                rating_display.appendChild(half_star);
+            }
+
+            let link_tag = document.createElement("a");
+            let link = response[product][3];
+            console.log(link);
+
             newProductSection.appendChild(rating_display);
         }
     });
