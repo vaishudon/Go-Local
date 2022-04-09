@@ -3,3 +3,23 @@ body {
     min-height:600px;
     background-color: white;
 }
+
+h2 {
+    font-size: 15px;
+}
+
+article {
+    margin: 20px;
+}
+
+p {
+    margin: 5px
+}
+
+.stars {
+    display: flex;
+}
+
+img {
+    width: 10px;
+}

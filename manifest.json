@@ -7,8 +7,9 @@
     "default_popup": "popup.html"
   },
   "permissions": [
+    "http://127.0.0.1:5000/retrieve",
     "activeTab",
-    "http://api.openweathermap.org/data/2.5/*", 
+    "http://api.openweathermap.org/data/2.5/*",
     "geolocation",
     "https://api.waqi.info//feed/*"
 ]

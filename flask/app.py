@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask import jsonify
+from flask import request
 
 from bs4 import BeautifulSoup
 import requests
@@ -15,8 +16,10 @@ def index():
 # A function to add two numbers
 @app.route("/retrieve")
 def retrieve():
+  item = request.args.get('product')
+
   headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
-  url = 'https://www.etsy.com/search?q=mirror&explicit=1&locationQuery=5809844&ship_to=US'
+  url = 'https://www.etsy.com/search?q=' + item
 
   response=requests.get(url,headers=headers)
   soup=BeautifulSoup(response.content,'lxml')
