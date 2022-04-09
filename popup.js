@@ -1,6 +1,4 @@
 let locationName = ''
-let chosenLat = 0;
-let chosenLong = 0;
 var geolocation_api_key = config.GEO_LOCATION_API_KEY;
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -25,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
             .then((response) => response.json())
             .then(displayProducts)
             .catch(console.err);
+            let start = tabs[0].url.indexOf("s?k=") + 4;
+            let end = tabs[0].url.indexOf("&");
+            console.log(tabs[0].url.substring(start, end));
           });
     });
 }, false);
