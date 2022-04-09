@@ -4,6 +4,10 @@ let chosenLong = 0;
 var geolocation_api_key = config.GEO_LOCATION_API_KEY;
 
 document.addEventListener('DOMContentLoaded', function () {
+    fetch('http://127.0.0.1:5000/retrieve')
+        .then((response) => response.json())
+        .then(console.log)
+        .catch(console.err);
 
     navigator.geolocation.getCurrentPosition(position => {
         const { latitude, longitude } = position.coords;
