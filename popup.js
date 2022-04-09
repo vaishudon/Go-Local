@@ -55,7 +55,6 @@ function displayProducts(response) {
             newProductSection.appendChild(price);
 
 
-
             let rating_display = document.createElement("section");
             rating_display.classList = "stars";
             let rating = document.createElement("p");
@@ -72,6 +71,7 @@ function displayProducts(response) {
                 half_star.src = "img/half-star.png";
                 rating_display.appendChild(half_star);
             }
+
 
             let link_tag = document.createElement("a");
             let link = response[product][3];
