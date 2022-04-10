@@ -1,5 +1,5 @@
 {
-  "name": "Go Logo",
+  "name": "Go Local",
   "description": "SWE Hacks '22",
   "version": "1.0",
   "manifest_version": 2,
@@ -14,7 +14,7 @@
     "https://api.waqi.info//feed/*"
   ],
   "icons": {
-    "16": "logo.jpeg",
-    "128": "logo.jpeg"
+    "16": "logo-16.png",
+    "128": "logo-128.png"
   }
 }
