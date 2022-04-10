@@ -14,7 +14,7 @@
     "https://api.waqi.info//feed/*"
   ],
   "icons": {
-    "16": "logo-16.png",
-    "128": "logo-128.png"
+    "16": "img/logo-16.png",
+    "128": "img/logo-128.png"
   }
 }

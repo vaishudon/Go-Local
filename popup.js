@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }).then(()=>getGeocode(product_name))
         });
       });
-
 }, false);
 
 /**
