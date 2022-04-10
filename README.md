@@ -22,3 +22,21 @@
 ## Demo
 short explanation of image
 ![img](https://user-images.githubusercontent.com/56169756/162601661-e5dcf4dc-0602-4a6e-95c0-3461b46ad5bb.png)
+
+When a user is searching for a product on Amazon, they can use Go Local to see similar products from local businesses.
+
+1. After searching for a product on Amazon, click the Go Local extension
+2. A few products made by local sellers will appear. You will see:
+  i.  Seller's name
+  ii. Seller's description
+  iii. Product pricing
+  iv. Seller's Rating
+3. Click on the desired product to learn more about it.
+
+## Future Updates
+In Go Local 1.0, the main feature includes the ability to browse solely products from local businesses on [Etsy](https://www.etsy.com/). Future versions of Go Local will include:
+1. Ability to get notified of local products when on any online shopping sites, not just Amazon.
+2. Ability to browse local businesses that aren't only on Etsy.
+3. Ability for businesses to create profiles and directly engage with Go Local users.
+
+For more information about our vision, please visit our UI prototype: **INCLUDE LINK HERE**
