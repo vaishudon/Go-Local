@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(getCityAPILink).then(r => r.text()).then(result => {
             let addressJSON = JSON.parse([result])
             locationName = addressJSON.results[0].locations[0].adminArea5 + ", " + addressJSON.results[0].locations[0].adminArea3;
-         //  console.log(locationName);
+            //  console.log(locationName);
 
         })
     });
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(console.err);
 
         console.log(product_name);
-      });
+    });
 
 }, false);
 
@@ -39,8 +39,23 @@ function displayProducts(response) {
     let keys = Object.keys(response);
     keys.forEach((product, index) => {
         if (index < 4) {
+            let link = response[product][3];
+
+            let product_section = document.createElement("div");
+            product_section.className = "product-section";
+            product_section.onclick = function(){
+                window.open(link, "_blank");
+            }
+            // add background box to section
+            section.appendChild(product_section);
+
+            let text_div = document.createElement("div");
+            text_div.className = "text-div";
+            product_section.appendChild(text_div);
+
+            // create new product and add it to clickable background
             let newProductSection = document.createElement("article");
-            section.appendChild(newProductSection);
+            text_div.appendChild(newProductSection);
 
             let seller = document.createElement("h2");
             seller.textContent = response[product][2].substring(10,);
@@ -73,9 +88,8 @@ function displayProducts(response) {
             }
 
 
-            let link_tag = document.createElement("a");
-            let link = response[product][3];
-            console.log(link);
+
+
 
             newProductSection.appendChild(rating_display);
         }
