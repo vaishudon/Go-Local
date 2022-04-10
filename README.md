@@ -7,6 +7,7 @@ Go Local is a chrome extension intended to remind people about local businesses 
 * Python 3.8
 * Flask 1.1.2
 * BeautifulSoup4
+* Enable your device to provide location services to Google Chrome.
 
 ## :technologist: Installation
 1. Download the [source code](https://github.com/vaishudon/Go-Local.git).
@@ -15,8 +16,7 @@ Go Local is a chrome extension intended to remind people about local businesses 
 * `pip install beautifulsoup4`
 * `pip install requests soupsieve lxml`
 3. Move into the flask folder using the command `cd flask`. Run `python -m flask run` to start up the server.
-4. Enable your device to provide location services to Google Chrome.
-5. Upload the Chrome extension:
+4. Upload the Chrome extension:
     1. Go to Google Chrome, and click on **Extensions** (chrome://extensions/) from the menu bar. Select **Manage Extensions**.
     2. Once the extensions window opens, click the **Load Unpacked** button from the top left corner.
     3. Then, select the folder containing all the source code. Now, you should see the extension appear in the list of available extensions. 
