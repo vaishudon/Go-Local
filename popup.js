@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(getCityAPILink).then(r => r.text()).then(result => {
             let addressJSON = JSON.parse([result])
             locationName = addressJSON.results[0].locations[0].adminArea5 + ", " + addressJSON.results[0].locations[0].adminArea3;
-            //  console.log(locationName);
+         //  console.log(locationName);
 
         })
     });
@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(console.err);
 
         console.log(product_name);
-    });
+      });
 
 }, false);
 
 function displayProducts(response) {
-    let section = document.querySelector("section");
+    let section = document.querySelector("#items");
     let keys = Object.keys(response);
     keys.forEach((product, index) => {
         if (index < 4) {
@@ -49,31 +49,32 @@ function displayProducts(response) {
             // add background box to section
             section.appendChild(product_section);
 
-            let text_div = document.createElement("div");
-            text_div.className = "text-div";
-            product_section.appendChild(text_div);
-
-            // create new product and add it to clickable background
-            let newProductSection = document.createElement("article");
-            text_div.appendChild(newProductSection);
-
             let seller = document.createElement("h2");
             seller.textContent = response[product][2].substring(10,);
-            newProductSection.appendChild(seller);
+            product_section.appendChild(seller);
 
             let title = document.createElement("p");
+            title.classList.add("description")
             title.textContent = product;
-            newProductSection.appendChild(title);
+            product_section.appendChild(title);
 
+            let price_display = document.createElement("section");
+            price_display.classList.add("price")
+            let price_heading = document.createElement("p");
+            price_heading.textContent = "Price: ";
+            price_heading.classList.add("bolded");
+            price_display.appendChild(price_heading);
             let price = document.createElement("p");
-            price.textContent = "Price: $" + response[product][0];
-            newProductSection.appendChild(price);
+            price.textContent = response[product][0];
+            price_display.appendChild(price);
+            product_section.appendChild(price_display);
 
 
             let rating_display = document.createElement("section");
             rating_display.classList = "stars";
             let rating = document.createElement("p");
-            rating.textContent = "Rating: "
+            rating.textContent = "Rating: ";
+            rating.classList.add("bolded");
             rating_display.appendChild(rating);
 
             for (let i = 0; i < parseInt(response[product][1]); i++) {
@@ -88,10 +89,7 @@ function displayProducts(response) {
             }
 
 
-
-
-
-            newProductSection.appendChild(rating_display);
+            product_section.appendChild(rating_display);
         }
     });
 }
