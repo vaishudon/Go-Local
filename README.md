@@ -23,7 +23,7 @@ Go Local is a chrome extension intended to remind people about local businesses 
  
 ![img](https://user-images.githubusercontent.com/56169756/162602059-fe0dc585-05f4-4b9c-9feb-06a9bd2545ec.png)
 
-## :arrow_forward: Demo
+## :computer: Demo
 When a user is searching for a product on Amazon, they can use Go Local to see similar products from local businesses.
 
 1. After searching for a product on Amazon, click the Go Local extension
@@ -34,6 +34,8 @@ When a user is searching for a product on Amazon, they can use Go Local to see s
     4. Seller's Rating
 3. Click on the desired product to learn more about it! :brain:
 
+## :desktop_computer: Github
+Our Go Local team worked virtually to develop the chrome extension. Initially, it was difficult to communicate with each other about the various edits we were making to our code. Github was influential in our development as we used commits to better collaborate. During the process, we ran into merge conflicts which we were able to resolve by reading our partner's commit messages and understanding what their code does. By having detailed commit messages and remembering to continuously push and pull our work, we were able to most efficiently collaborate remotely. Additionally, with Github, we were able to create a detailed README where users can not only find out how to use the product, but also how to install it on their own devices. Furthermore, we were able to include pictures to better direct viewers about how to navigate our code. Overall, Github proved to be an engaging platform for both our collaboration and user outreach needs.
 ![img](https://user-images.githubusercontent.com/56169756/162601661-e5dcf4dc-0602-4a6e-95c0-3461b46ad5bb.png)
 
 ## :bulb: Future Updates
