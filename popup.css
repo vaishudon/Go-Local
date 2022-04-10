@@ -1,12 +1,52 @@
 body {
-    min-width: 300px;
+    min-width: 350px;
     min-height: 600px;
     max-width: 300px;
     background-color: #EED5F5;
 }
 
-h2 {
-    font-size: 15px;
+#items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+}
+
+.heading section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:0px;
+}
+
+#items h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    margin: 5px;
+}
+
+#logo {
+    width: 40px;
+    height: 35px;
+}
+
+.heading h2 {
+    margin-top: 0px;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
 }
 
 article {
@@ -14,8 +54,18 @@ article {
     width: 280px;
 }
 
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
 p {
     margin: 5px;
+}
+
+.description {
+    padding-right: 10px;
 }
 
 .stars {
@@ -29,49 +79,32 @@ img {
 }
 
 .text-div{
-    width: 280px;
-}
-.product-section{
-
-
-    margin-bottom: 5%;
+  width: 180px;
 }
 
-/* CSS */
 .product-section {
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #762898 0, #C179DC 100%);
   /* border: 0; */
   box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  /* box-sizing: border-box; */
   color: #fff;
   cursor: pointer;
-  /* display: inline-flex; */
-  /* font-family: "JetBrains Mono",monospace; */
-  /* height: 48px; */
   justify-content: center;
-  /* line-height: 1;
-  list-style: none; */
-  /* overflow: hidden;  */
-   padding-left: 20px;
+  padding-left: 20px;
   padding-right: 20px;
-  /* position: relative; */
   overflow-wrap: break-word;
-
-  /* text-align: left; */
-  /* text-decoration: none; */
   transition: box-shadow .15s,transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  /* white-space: nowrap; */
   will-change: box-shadow,transform;
   padding: 5px;
   border-radius: 15px;
-
-
-
+  width: 280px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom:10px;
   /* font-size: 18px; */
 }
 
