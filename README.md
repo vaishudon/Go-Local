@@ -34,9 +34,10 @@ When a user is searching for a product on Amazon, they can use Go Local to see s
     4. Seller's Rating
 3. Click on the desired product to learn more about it! :brain:
 
+![img](https://user-images.githubusercontent.com/56169756/162601661-e5dcf4dc-0602-4a6e-95c0-3461b46ad5bb.png)
+
 ## :desktop_computer: Github
 Our Go Local team worked virtually to develop the chrome extension. Initially, it was difficult to communicate with each other about the various edits we were making to our code. Github was influential in our development as we used commits to better collaborate. During the process, we ran into merge conflicts which we were able to resolve by reading our partner's commit messages and understanding what their code does. By having detailed commit messages and remembering to continuously push and pull our work, we were able to most efficiently collaborate remotely. Additionally, with Github, we were able to create a detailed README where users can not only find out how to use the product, but also how to install it on their own devices. Furthermore, we were able to include pictures to better direct viewers about how to navigate our code. Overall, Github proved to be an engaging platform for both our collaboration and user outreach needs.
-![img](https://user-images.githubusercontent.com/56169756/162601661-e5dcf4dc-0602-4a6e-95c0-3461b46ad5bb.png)
 
 ## :bulb: Future Updates
 In Go Local 1.0, the main feature includes the ability to browse solely products from local businesses on [Etsy](https://www.etsy.com/). Future versions of Go Local will include:
