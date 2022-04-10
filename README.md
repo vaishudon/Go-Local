@@ -42,4 +42,4 @@ In Go Local 1.0, the main feature includes the ability to browse solely products
 2. Ability to browse local businesses that aren't only on Etsy.
 3. Ability for businesses to create profiles and directly engage with Go Local users.
 
-For more information about our vision, please visit our UI prototype: **INCLUDE LINK HERE**
+For more information about our vision, please visit our [UI prototype](https://www.figma.com/file/ldub7xdWXKEtFITGymgo3W/go-local-prototype?node-id=0%3A1)! :art:
