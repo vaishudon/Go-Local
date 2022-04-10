@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }).then(()=>getGeocode(product_name))
         });
       });
-
 }, false);
 
 function getGeocode(product_name) {
@@ -38,7 +37,6 @@ function getProducts(product_name, geocode) {
     .then((response) => response.json())
     .then(displayProducts)
     .catch(console.err);
-
 }
 
 function displayProducts(response) {
