@@ -27,11 +27,11 @@ When a user is searching for a product on Amazon, they can use Go Local to see s
 
 1. After searching for a product on Amazon, click the Go Local extension
 2. A few products made by local sellers will appear. You will see:
-  i.  Seller's name
-  ii. Seller's description
-  iii. Product pricing
-  iv. Seller's Rating
-3. Click on the desired product to learn more about it.
+    1.  Seller's name
+    2. Seller's description
+    3. Product pricing
+    4. Seller's Rating
+3. Click on the desired product to learn more about it!
 
 ## Future Updates
 In Go Local 1.0, the main feature includes the ability to browse solely products from local businesses on [Etsy](https://www.etsy.com/). Future versions of Go Local will include:
