@@ -24,8 +24,6 @@ Go Local is a chrome extension intended to remind people about local businesses 
 ![img](https://user-images.githubusercontent.com/56169756/162602059-fe0dc585-05f4-4b9c-9feb-06a9bd2545ec.png)
 
 ## :arrow_forward: Demo
-![img](https://user-images.githubusercontent.com/56169756/162601661-e5dcf4dc-0602-4a6e-95c0-3461b46ad5bb.png)
-
 When a user is searching for a product on Amazon, they can use Go Local to see similar products from local businesses.
 
 1. After searching for a product on Amazon, click the Go Local extension
@@ -34,7 +32,9 @@ When a user is searching for a product on Amazon, they can use Go Local to see s
     2. Seller's description
     3. Product pricing
     4. Seller's Rating
-3. Click on the desired product to learn more about it!
+3. Click on the desired product to learn more about it! :brain:
+
+![img](https://user-images.githubusercontent.com/56169756/162601661-e5dcf4dc-0602-4a6e-95c0-3461b46ad5bb.png)
 
 ## :bulb: Future Updates
 In Go Local 1.0, the main feature includes the ability to browse solely products from local businesses on [Etsy](https://www.etsy.com/). Future versions of Go Local will include:
